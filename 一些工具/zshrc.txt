@@ -1,0 +1,36 @@
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+export PATH=$PATH:$HOME/.config/yarn/global/node_modules/.bin
+export PATH=$PATH:$HOME/Library/Python/3.6/bin
+
+export ZSH=/Users/keeley/.oh-my-zsh
+
+ZSH_THEME="avit"
+
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+
+plugins=(git sublime)
+
+source $ZSH/oh-my-zsh.sh
+
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+
+
+alias code='/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code'
+
+alias -s {json,js,sleet,java,txt,css}=code
+
+alias prp="pipenv run python"
+
+alias pc="proxychains4"
+
+alias httpservice="python -m SimpleHTTPServer 8000"
+
+killlsof() { kill -9 $(lsof -t -i:$1) }
+
+gpush() { g push origin develop:$1 }
+
+fpath=(/Users/keeley/.zsh/gradle-completion $fpath)

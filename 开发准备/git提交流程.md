@@ -8,7 +8,7 @@ git clone git@xxxx.xxx.xxx
 
 ## 本地新增develop分支，并且跟远程做关联
 ```
-git checkout -b develop origin:develop
+git checkout -b develop origin/develop
 ```
 
 ## 提交到本地

@@ -1,0 +1,3 @@
+Host gitlab.zhixueyun.com
+  RSAAuthentication yes
+  Port 19922

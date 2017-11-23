@@ -9,7 +9,7 @@ var moveItem = function(arr, fromIndex, toIndex) {
         if (k == fromIndex) {
             arr.splice(k, 1);
             arr.splice(toIndex, 0, item);
-            break;
+            break;
         }
     }
     return arr;
